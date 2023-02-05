@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --font-family: 'League spartan', sans-serif;
+    --font-style: normal;
+    --portfolio-blue: #000C24;
+    --portfolio-white: #FBFBFB;
+    --portfolio-red: #F44336;
+    --portfolio-grey: #928A97;
+
+    /* Font sizes */
+    --large-heading-font-style: normal;
+    --large-heading-font-weight: 600;
+    --large-heading-font-size: 38px;
+    --large-heading-line-height: 46px;
+
+    --heading-1-font-weight: 700;
+    --heading-1-font-size: 32px;
+    --heading-1-line-height: 36px;
+
+    --heading-2-font-weight: 600;
+    --heading-2-font-size: 24px;
+    --heading-2-line-height: 27px;
+
+    --body-font-weight: 400;
+    --body-font-size: 24px;
+    --body-line-height: 46px;
+
+    --text-button-font-weight: 500;
+    --text-button-font-size: 18px;
+    --text-button-line-height: 20px;
+
+    --button-font-weight: 500;
+    --button-font-size: 16px;
+    --button-line-height: 21px;
+    --button-letter-spacing: 0.0125em;
+
+    --chip-font-weight: 500;
+    --chip-font-size: 14px;
+    --chip-line-height: 24px;
+
+    --label-font-weight: 500;
+    --label-font-size: 12px;
+    --label-line-height: 13px;
+
+}
+
+.hero-container {
+    background-color: var(--portfolio-blue);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container .hero {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-container .hero .hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+.hero-container .hero .hero-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-container .hero .hero-content h1 {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--large-heading-font-weight);
+    font-size: var(--large-heading-font-size);
+    line-height: var(--large-heading-line-height);
+    color: var(--portfolio-white);
+    margin-bottom: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
