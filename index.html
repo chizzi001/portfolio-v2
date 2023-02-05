@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Obinna Chidi Personal Portfolio</title>
 </head>
@@ -32,20 +34,31 @@
 
             <div class="hero">
 
-                <div class="hero-image" data-component="hero-image">
+                <!-- <div class="hero-image" data-component="hero-image">
                     <img src="https://via.placeholder.com/500/000/fff?text=Hero+jpg" alt="placeholder image">
-                </div>
+                </div> -->
 
                 <!-- Hero content -->
                 <div class="hero-content" data-component="hero-content">
                     <h1>OBINNA CHIDI</h1>
                     <p>Software Engineer in view <span>+</span> Junior Frontend Developer</p>
 
-                    <hero-social>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-                    </hero-social>
+                    <div class="hero-social">
+                        <div class="hero-social-item">
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
                     <a href="#" class="button">Button</a>
                 </div>
 
@@ -56,9 +69,16 @@
         <section class="about_me-container">
             <!-- create section with class about_me-container -->
 
-            <div class="about_me">
+            <div class="cover_img">
+                <!-- <img src="img/about-page.svg" alt=""> -->
+            </div>
 
-                <div class="about_me-text">
+            <div class="about_me">
+                <div class="about_me-bg">
+                    <img src="img/about-img-BG.svg" alt="">
+                </div>
+
+                <div class="about_me-content">
                     <!-- create div with class about_me-text -->
                     <h1>About Me</h1>
                     <!-- create h1 tag with text About Me -->
@@ -70,16 +90,86 @@
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <!-- create p tag with text -->
+                    <div class="about_me-btn">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Download CV</a>
+                    </div>
                 </div>
-                <!-- create div with class about_me-text -->
                 <div class="about_me-image">
-                    <!-- create div with class about_me-image -->
-                    <img src="https://via.placeholder.com/300x400/000/fff?text=my+jpg" alt="placeholder image">
-                    <!-- create img tag with src and alt attributes -->
-                </div>
-                <!-- create div with class about_me-image -->
 
+                    <div class="me">
+                        <div class="myself">
+                            <img src="https://via.placeholder.com/300x400/000/fff?text=my+jpg" alt="placeholder image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="work_experience">
+                <div class="work_experience-content">
+                    <h1>Work Experience</h1>
+
+                    <div class="work_experience-item item1">
+                        <div class="item_detail detail1">
+                            <h3>Frontend Developer</h3>
+                            <p class="full_time">
+                                Full Time
+                            </p>
+                        </div>
+
+                        <div class="item_detail detail1_i">
+                            <p class="org">
+                                <a href="https://www.zuri.team/" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="briefcase-outline"></ion-icon>
+                                </a>
+                                Zuri Team
+                            </p>
+                            <p class="location">
+                                <a href="https://www.zuri.team/" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                </a>
+                                Zuri Team
+                            </p>
+                            <p class="date">
+                                <a href="https://www.zuri.team/" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </a>
+                                Zuri Team
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work_experience-item item2">
+                        <div class="item_detail detail2">
+                            <h3>Frontend Developer</h3>
+                            <p class="full_time">
+                                Full Time
+                            </p>
+
+                        </div>
+
+                        <div class="item_detail detail2_i">
+                            <p class="org">
+                                <a href="https://www.zuri.team/" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="briefcase-outline"></ion-icon>
+                                </a>
+                                Zuri Team
+                            </p>
+                            <p class="location">
+                                <a href="https://www.zuri.team/" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                </a>
+                                Zuri Team
+                            </p>
+                            <p class="date">
+                                <a href="https://www.zuri.team/" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </a>
+                                Zuri Team
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -239,7 +329,8 @@
 
 
 
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
