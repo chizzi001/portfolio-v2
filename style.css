@@ -342,7 +342,8 @@ header {
 
 /* SECTION WORK EXPERIENCE */
 
-.about_me-container .work_experience {
+.about_me-container .work_experience,
+.about_me-container .education {
     width: 100%;
     /* max-width: 1440px; */
     display: flex;
@@ -351,7 +352,8 @@ header {
     padding: 0 20px;
 }
 
-.about_me-container .work_experience .work_experience-content {
+.about_me-container .work_experience .work_experience-content,
+.about_me-container .education .education-content {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -360,7 +362,8 @@ header {
     flex-direction: column;
 }
 
-.about_me-container .work_experience .work_experience-content h1 {
+.about_me-container .work_experience .work_experience-content h1,
+.about_me-container .education .education-content h1 {
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -373,7 +376,8 @@ header {
     color: var(--portfolio-red);
 }
 
-.about_me-container .work_experience .work_experience-content .work_experience-item {
+.about_me-container .work_experience .work_experience-content .work_experience-item,
+.about_me-container .education .education-content .education-item {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -384,7 +388,8 @@ header {
     width: 60%;
 }
 
-.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail {
+.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail,
+.about_me-container .education .education-content .education-item .item_detail {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -393,7 +398,8 @@ header {
     justify-content: space-between;
 }
 
-.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail h3 {
+.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail h3,
+.about_me-container .education .education-content .education-item .item_detail h3 {
     font-family: var(--font-family);
     font-style: var(--font-style);
     font-weight: var(--heading-2-font-weight);
@@ -403,7 +409,8 @@ header {
     margin-bottom: 20px;
 }
 
-.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .full_time {
+.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .full_time,
+.about_me-container .education .education-content .education-item .item_detail .full_time {
     font-family: var(--font-family);
     font-style: var(--font-style);
     font-weight: var(--label-font-weight);
@@ -420,7 +427,10 @@ header {
 
 .about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .org,
 .about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .date,
-.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .location {
+.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .location,
+.about_me-container .education .education-content .education-item .item_detail .org,
+.about_me-container .education .education-content .education-item .item_detail .date,
+.about_me-container .education .education-content .education-item .item_detail .location {
     font-family: var(--font-family);
     font-style: var(--font-style);
     font-weight: var(--button-font-weight);
@@ -435,7 +445,10 @@ header {
 
 .about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .org a,
 .about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .date a,
-.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .location a {
+.about_me-container .work_experience .work_experience-content .work_experience-item .item_detail .location a,
+.about_me-container .education .education-content .education-item .item_detail .org a,
+.about_me-container .education .education-content .education-item .item_detail .date a,
+.about_me-container .education .education-content .education-item .item_detail .location a {
     color: var(--portfolio-grey);
     text-decoration: none;
     padding-right: 10px;
