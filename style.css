@@ -680,12 +680,12 @@ footer .footer_container .main_row_1 {
     /* justify-content: flex-start; */
 }
 
-/* .gallery-cards .slide {
+.gallery-cards .slide {
     position: absolute;
     top: 50%;
     left: 0%;
     transform: translateY(-50%) translateX(5%);
-} */
+}
 
 .gallery-cards .content {
     /* background-color: darkturquoise; */
