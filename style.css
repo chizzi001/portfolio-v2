@@ -598,3 +598,183 @@ footer .footer_container .main_row_2 {
 footer .footer_container .main_row_1 {
     border-bottom: 5px solid var(--portfolio-blue);
 }
+
+
+
+
+
+
+
+
+.my_projects-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.my_projects-container .project_bg {
+    position: absolute;
+    top: 200px;
+    left: -20px;
+}
+
+.my_projects-container .my_projects h2 {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--heading-1-font-weight);
+    font-size: var(--heading-1-font-size);
+    line-height: var(--heading-1-line-height);
+    margin-bottom: 10px;
+    color: var(--portfolio-red);
+    /* text-shadow: -1px 1px 0 var(--portfolio-white),
+        1px 1px 0 var(--portfolio-white),
+        1px -1px 0 var(--portfolio-white),
+        -1px -1px 0 var(--portfolio-white); */
+    transform: translateY(100px);
+}
+
+
+.no-select {
+    user-select: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75em 1.25em;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 1.25em;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.gallery {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+}
+
+.gallery img {
+    float: left;
+
+}
+
+.gallery,
+.gallery .slide,
+.gallery-image,
+.gallery-image .content,
+.gallery-image:before {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-cards .slide {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-out;
+}
+
+.gallery-cards .panel {
+    position: relative;
+    display: flex;
+    /* justify-content: flex-start; */
+}
+
+/* .gallery-cards .slide {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%) translateX(5%);
+} */
+
+.gallery-cards .content {
+    /* background-color: darkturquoise; */
+    /* color: #fff; */
+    /* text-align: center; */
+    flex: 1 0 100%;
+    order: 2;
+}
+
+.gallery-cards .content .slide {
+    opacity: 0;
+    top: 40%;
+    width: 50%;
+}
+
+.gallery-cards .content .slide h3 {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--heading-2-font-weight);
+    font-size: var(--heading-2-font-size);
+    line-height: var(--heading-2-line-height);
+    color: var(--portfolio-red);
+    margin-bottom: 20px;
+}
+
+.gallery-cards .content .slide[data-order="1"] {
+    opacity: 1;
+}
+
+.gallery-cards .content h2 {
+    font-size: 3em;
+}
+
+.gallery-cards .images {
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    flex: 0 0 40%;
+    margin-left: 2rem;
+}
+
+.gallery-cards .images .slide {
+    /* width: max-content; */
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%) translateX(5%);
+}
+
+.gallery-cards .images .slide img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-cards .images .slide[data-order="1"] {
+    transform: translateY(-70%) translateX(0%) translateZ(0) scale(1);
+    z-index: 1004;
+}
+
+.gallery-cards .images .slide[data-order="2"] {
+    /* transform: translateY(-60%) translateX(-40%) translateZ(-50px) scale(0.95); */
+    transform: translateY(-70%) translateX(0%) translateZ(0) scale(1);
+    z-index: 1003;
+    opacity: 0.85;
+}
+
+.gallery-cards .images .slide[data-order="3"] {
+    /* transform: translateY(-70%) translateX(-30%) translateZ(-100px) scale(0.9); */
+    transform: translateY(-70%) translateX(0%) translateZ(0) scale(1);
+    z-index: 1002;
+    opacity: 0.7;
+}
+
+.gallery-cards .images .slide[data-order="4"] {
+    /* transform: translateY(-80%) translateX(-20%) translateZ(-150px) scale(0.85); */
+    transform: translateY(-70%) translateX(0%) translateZ(0) scale(1);
+    z-index: 1001;
+    opacity: 0;
+}
+
+.gallery-cards .images .slide.leave {
+    transform: translateX(0) translateY(50%) translateZ(0);
+    z-index: 1005;
+}
+
+.gallery-cards .images .slide:before {
+    content: none;
+}
