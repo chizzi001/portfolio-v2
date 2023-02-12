@@ -717,13 +717,6 @@ footer .footer_container .main_row_1 {
     opacity: 1;
 }
 
-/* .gallery-cards .content h2 {
-    font-size: 3em;
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
-
 .gallery-cards .images {
     overflow: hidden;
     -webkit-perspective: 1000;
