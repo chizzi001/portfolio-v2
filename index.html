@@ -358,33 +358,35 @@
             <div class="contact_me">
                 <!-- This is the header container -->
                 <div class="contact_me_header">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam explicabo repudiandae, illum
+                        omnis animi officiis ipsum molestias nesciunt ut ullam?
+                    </p>
                 </div>
                 <!-- This is the form container -->
                 <div class="contact_me_form">
 
-                    <h2>Get in touch with me</h2>
 
-                    <form action="#" method="get">
+                    <form action="#" method="get" autocomplete="off" aria-required="true">
+
+                        <h2>Get in Touch</h2>
                         <!-- This is the name input container -->
                         <div class="contact_me_form-item form_item1">
-                            <label for="name">Name</label>
                             <input type="text" name="name" id="name" placeholder="Name" required>
                         </div>
 
                         <!-- This is the email input container -->
                         <div class="contact_me_form-item form_item2">
-                            <label for="email">Email</label>
                             <input type="email" name="email" id="email" placeholder="Email" required>
                         </div>
 
                         <!-- This is the message input container -->
                         <div class="contact_me_form-item form_item3">
-                            <label for="message">Message</label>
                             <textarea name="message" id="message" placeholder="Message" required></textarea>
                         </div>
                         <!-- This is the submit input container -->
                         <div class="contact_me_form-item form_item4">
-                            <input type="submit" value="Send">
+                            <input class="send" type="submit" value="Send Message">
                         </div>
                     </form>
                 </div>
@@ -401,16 +403,38 @@
                     Lorem ipsum dolor sit amet.
                 </div>
                 <div class="footer_contact">
-                    Lorem ipsum dolor sit amet.
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
                 </div>
             </div>
 
             <div class="main_row_2">
                 <div class="footer_nav">
-                    Lorem ipsum dolor sit amet.
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="footer_profile">
-                    Lorem ipsum dolor sit amet.
+                    © Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                    . Made by <span class="fullName">
+                        <a rel="noreferrer" target="_blank" href="#">Obinna Chidi</a>
+                    </span>
                 </div>
             </div>
         </div>

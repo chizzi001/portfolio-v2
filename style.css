@@ -569,41 +569,6 @@ header {
     height: auto;
 }
 
-footer {
-    height: 500px;
-    width: 100%;
-    background-color: var(--portfolio-red);
-    /* clip-path: polygon(0 0, 100% 0%, 100% 72%, 0% 100%); */
-}
-
-footer .footer_container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    align-items: center;
-}
-
-footer .footer_container .main_row_1,
-footer .footer_container .main_row_2 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 2px solid red; */
-}
-
-footer .footer_container .main_row_1 {
-    border-bottom: 5px solid var(--portfolio-blue);
-}
-
-
-
-
-
 
 
 
@@ -777,4 +742,144 @@ footer .footer_container .main_row_1 {
 
 .gallery-cards .images .slide:before {
     content: none;
+}
+
+.contact_me-container {
+    background-image: url(img/contact_bg.svg);
+    padding: 5rem 0;
+    margin-top: 5rem;
+}
+
+.contact_me-container .contact_me {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: var(--portfolio-white);
+    /* align-content: center; */
+}
+
+.contact_me-container .contact_me .contact_me_header {
+    display: flex;
+    padding: 2rem;
+    /* width: 50%; */
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.contact_me-container .contact_me .contact_me_header p {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--heading-2-font-weight);
+    font-size: var(--heading-2-font-size);
+    line-height: var(--large-heading-font-size);
+    color: var(--portfolio-blue);
+    /* margin-bottom: 20px; */
+}
+
+
+.contact_me-container .contact_me .contact_me_form {
+    display: flex;
+    /* width: 100%; */
+    flex-basis: 70%;
+}
+
+.contact_me-container .contact_me .contact_me_form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact_me-container .contact_me .contact_me_form form .contact_me_form-item {
+    /* height: 100px; */
+    padding: 1rem;
+    /* border: 2px solid var(--portfolio-red); */
+    display: flex;
+    width: 100%;
+}
+
+.contact_me-container .contact_me .contact_me_form form .contact_me_form-item textarea,
+.contact_me-container .contact_me .contact_me_form form .contact_me_form-item input:not(.send) {
+    height: 50px;
+    padding: 1rem;
+    width: 98%;
+    resize: none;
+    outline: none;
+}
+
+.contact_me-container .contact_me .contact_me_form form .contact_me_form-item textarea {
+    height: 100px;
+}
+
+.contact_me-container .contact_me .contact_me_form form .contact_me_form-item .send {
+    background-color: var(--portfolio-blue);
+    color: var(--portfolio-white);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.contact_me-container .contact_me .contact_me_form form h2 {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--heading-1-font-weight);
+    font-size: var(--heading-1-font-size);
+    line-height: var(--heading-1-line-height);
+    padding: 1rem;
+    /* margin-bottom: 20px; */
+    color: var(--portfolio-red);
+    /* text-shadow: -1px 1px 0 var(--portfolio-white),
+        1px 1px 0 var(--portfolio-white),
+        1px -1px 0 var(--portfolio-white),
+        -1px -1px 0 var(--portfolio-white); */
+}
+
+
+footer {
+    /* height: 500px; */
+    width: 100%;
+    background-color: var(--portfolio-blue);
+    color: var(--portfolio-white);
+    /* clip-path: polygon(0 0, 100% 0%, 100% 72%, 0% 100%); */
+}
+
+footer .footer_container {
+
+    height: 100%;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer_container .main_row_1,
+footer .footer_container .main_row_2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+footer .footer_container .main_row_1 {
+    border-bottom: 5px solid var(--portfolio-blue);
+}
+
+footer .footer_container .main_row_2 .footer_nav {
+    display: flex;
+}
+
+footer .footer_container .main_row_2 .footer_nav ul {
+    display: flex;
+
+}
+
+footer .footer_container .main_row_2 .footer_nav ul li {
+    padding: 1rem;
+}
+
+footer .footer_container .main_row_2 .footer_nav ul li a {
+    text-decoration: none;
 }
