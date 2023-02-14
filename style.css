@@ -60,7 +60,58 @@
 /* SECTION NAV BAR */
 
 header {
-    display: none;
+    display: flex;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* background: var(--portfolio-blue); */
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+header nav .logo {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--large-heading-font-weight);
+    font-size: var(--large-heading-font-size);
+    line-height: var(--large-heading-line-height);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--portfolio-blue);
+    text-shadow: -1px 1px 0 var(--portfolio-white),
+        1px 1px 0 var(--portfolio-white),
+        1px -1px 0 var(--portfolio-white),
+        -1px -1px 0 var(--portfolio-white);
+    order: 2;
+}
+
+header nav ul {
+    display: flex;
+    flex-basis: 70%;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    order: 1;
+}
+
+header nav ul li {
+    margin-right: 20rem;
+}
+
+header nav ul li a {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--heading-2-font-weight);
+    font-size: var(--heading-2-font-size);
+    line-height: var(--heading-2-line-height);
+    color: var(--portfolio-white);
+    text-decoration: none;
 }
 
 /* !SECTION */
@@ -844,8 +895,9 @@ footer {
 footer .footer_container {
 
     height: 100%;
-    width: 100%;
+    width: 95%;
     padding: 2rem 0;
+    margin: auto;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
@@ -867,6 +919,49 @@ footer .footer_container .main_row_1 {
     border-bottom: 5px solid var(--portfolio-blue);
 }
 
+footer .footer_container .main_row_1 .footer_logo {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-size: var(--heading-1-font-size);
+    font-weight: var(--heading-1-font-weight);
+    line-height: var(--heading-1-line-height);
+    color: var(--portfolio-white);
+    padding: 1rem;
+    /* text-shadow: -1px 1px 0 var(--portfolio-blue),
+        1px 1px 0 var(--portfolio-blue),
+        1px -1px 0 var(--portfolio-blue),
+        -1px -1px 0 var(--portfolio-blue); */
+}
+
+footer .footer_container .main_row_1 .footer_contact a {
+    text-decoration: none;
+    color: var(--portfolio-white);
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-size: var(--chip-font-size);
+    font-weight: var(--chip-font-weight);
+    line-height: var(--chip-line-height);
+    transition: all 0.3s ease-in-out;
+    /* text-shadow: -1px 1px 0 var(--portfolio-blue),
+        1px 1px 0 var(--portfolio-blue),
+        1px -1px 0 var(--portfolio-blue),
+        -1px -1px 0 var(--portfolio-blue); */
+}
+
+footer .footer_container .main_row_1 .footer_contact a ion-icon {
+    font-size: 1.5rem;
+}
+
+footer .footer_container .main_row_1 .footer_contact a ion-icon:not(.insta) {
+    margin-right: 1rem;
+}
+
+
+footer .footer_container .main_row_1 .footer_contact a:hover {
+    color: var(--portfolio-red);
+
+}
+
 footer .footer_container .main_row_2 .footer_nav {
     display: flex;
 }
@@ -878,8 +973,40 @@ footer .footer_container .main_row_2 .footer_nav ul {
 
 footer .footer_container .main_row_2 .footer_nav ul li {
     padding: 1rem;
+    list-style: none;
 }
 
+
+
 footer .footer_container .main_row_2 .footer_nav ul li a {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-size: var(--chip-font-size);
+    font-weight: var(--chip-font-weight);
+    line-height: var(--chip-line-height);
+    color: var(--portfolio-white);
     text-decoration: none;
 }
+
+footer .footer_container .main_row_2 .footer_profile {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-size: var(--chip-font-size);
+    font-weight: var(--chip-font-weight);
+    line-height: var(--chip-line-height);
+    color: var(--portfolio-white);
+}
+
+footer .footer_container .main_row_2 .footer_profile .fullName a {
+    text-decoration: none;
+    background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in;
+}
+
+/* footer .footer_container .main_row_2 .footer_profile .fullName a:hover {
+    text-decoration: solid 2px var(--portfolio-red);
+
+} */
