@@ -69,7 +69,7 @@ header nav {
     align-items: center;
     padding: 0 20px;
     /* background: var(--portfolio-blue); */
-    height: 80px;
+    height: 200px;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -98,10 +98,12 @@ header nav ul {
     align-items: center;
     list-style: none;
     order: 1;
+    height: 300px;
 }
 
 header nav ul li {
-    margin-right: 20rem;
+    margin-right: 5%;
+    height: 200px;
 }
 
 header nav ul li a {
@@ -112,6 +114,17 @@ header nav ul li a {
     line-height: var(--heading-2-line-height);
     color: var(--portfolio-white);
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 2rem;
+    height: 300px;
+    border: 2px solid green;
+}
+
+header nav ul li a:hover {
+    background-image: url(img/Group\ 50.svg);
+    background-position: center;
+    background-size: contain;
+    color: var(--portfolio-red);
 }
 
 /* !SECTION */
